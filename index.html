@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Расписание Аэропорта</title>
+    <style>
+        html {
+            height: 100%;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main-panel.css">
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="css/switch-button.css">
+    <link rel="stylesheet" href="css/social-icon.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script type="text/json" src="data/data.json"></script>
+</head>
+<body class="page">
+    <div class="header header_with-border">
+        <div class="header__wrapper">
+            <div class="header__item">
+                <a href="" class="header__item-text">
+                    Главная
+                </a>
+            </div>
+            <div class="header__item">
+                <a href="" class="header__item-text">
+                    Табло
+                </a>
+            </div>
+            <div class="header__item">
+                <a href="" class="header__item-text">
+                    Контакты
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="main-panel main-panel_rounded">
+            <div class="main-panel__header">
+                <div class="main-panel__text-wrapper">
+                    <input type="radio" name="text-control" id="arrival-control" class="main-panel__text-control" checked="">
+                    <input type="radio" name="text-control" id="departure-control" class="main-panel__text-control">
+                    <div class="main-panel__text-container">
+                        <p class="main-panel__text main-panel__text_arrival">Прилет</p>
+                        <p class="main-panel__text main-panel__text_departure">Вылет</p>
+                    </div>
+                </div>
+                <div class="main-panel__search-wrapper">
+                    <input class="main-panel__search" type="search" placeholder="№ рейса" id="test">
+                </div>
+                <div class="main-panel__buttons switch-buttons">
+                    <button class="switch-button switch-button_no-border switch-button_arrival"></button>
+                    <button class="switch-button switch-button_no-border switch-button_departure"></button>
+                </div>
+            </div>
+            <div class="main-panel__wrapper">
+                <div class="schedule schedule_arrive">
+                    <div class="schedule__row schedule__row_header">
+                        <div class="schedule__row-content_time">
+                            <p class="schedule__row-text schedule__row-text_head">время</p>
+                        </div>
+                        <div class="schedule__row-content_dest">
+                            <p class="schedule__row-text">город</p>
+                        </div>
+                        <div class="schedule__row-content_status">
+                            <p class="schedule__row-text">статус</p>
+                        </div>
+                        <div class="schedule__row-content_number schedule__row-content_head">
+                            <p class="schedule__row-text schedule__row-text_head">№ рейса</p>
+                        </div>
+                    </div>
+                    <div class="schedule__wrapper">
+                        <div class="schedule__content">
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule schedule_departure">
+                    <div class="schedule__row schedule__row_header">
+                        <div class="schedule__row-content_time">
+                            <p class="schedule__row-text schedule__row-text_head">время</p>
+                        </div>
+                        <div class="schedule__row-content_dest">
+                            <p class="schedule__row-text">город</p>
+                        </div>
+                        <div class="schedule__row-content_status">
+                            <p class="schedule__row-text">статус</p>
+                        </div>
+                        <div class="schedule__row-content_number schedule__row-content_head">
+                            <p class="schedule__row-text schedule__row-text_head">№ рейса</p>
+                        </div>
+                    </div>
+                    <div class="schedule__wrapper">
+                        <div class="schedule__content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__item">
+                <a class="footer__item-text" href="">Компания</a>
+            </div>
+            <div class="footer__item">
+                <a class="footer__item-text" href="">Политика конфидициальности</a>
+            </div>
+            <div class="footer__item">
+                <a class="footer__item-text" href="">About</a>
+            </div>
+            <div class="footer__item-social">
+                <div class="footer__social social-icon social-icon_telegram"></div>
+                <div class="footer__social social-icon social-icon_facebook"></div>
+                <div class="footer__social social-icon social-icon_twitter"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.min.js"></script>
+    <script src="js/seeder.js"></script>
+</body>
+</html>
