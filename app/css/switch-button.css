@@ -1,0 +1,23 @@
+.switch-button {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+  .switch-button_no-border {
+    border: 0;
+    margin: 0;
+    padding: 0; }
+  .switch-button_arrival {
+    background: #ccffff url("../img/plane-arrival.png") no-repeat;
+    -webkit-background-size: 30px 30px;
+            background-size: 30px; }
+  .switch-button_departure {
+    background: #ccffff url("../img/plane-departure.png") no-repeat;
+    -webkit-background-size: 30px 30px;
+            background-size: 30px; }
+  .switch-button_delay {
+    background: #ccffff url("../img/plane-delay.png") no-repeat center;
+    -webkit-background-size: 20px 20px;
+            background-size: 20px; }
+  .switch-button_arrival:hover, .switch-button_departure:hover, .switch-button_delay:hover {
+    border: 1px solid gray; }

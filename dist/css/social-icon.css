@@ -1,0 +1,21 @@
+.social-icon {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px; }
+  .social-icon_telegram {
+    background: #f0f0f0 url("../img/telegramm-icon.png") no-repeat center;
+    -webkit-background-size: 25px 25px;
+            background-size: 25px; }
+  .social-icon_facebook {
+    background: #f0f0f0 url("../img/facebook-icon.png") no-repeat center;
+    -webkit-background-size: 25px 25px;
+            background-size: 25px; }
+  .social-icon_twitter {
+    background: #f0f0f0 url("../img/twitter-icon.png") no-repeat center;
+    -webkit-background-size: 25px 25px;
+            background-size: 25px; }
+
+.social-icon:hover {
+  cursor: pointer;
+  background-color: white; }

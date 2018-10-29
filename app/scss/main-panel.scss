@@ -1,0 +1,92 @@
+.main-panel {
+    min-width: 500px;
+    width: 60vw;
+    height: 500px;
+    overflow: hidden;
+    background-color: white;
+    &_rounded {
+        border-radius: 30px;
+    }
+    &__header {
+        font-family: 'Roboto', sans-serif;
+        margin: 30px 0 0 0;
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__text-wrapper {
+        margin: 0 0 0 30px;
+        height: 30px;
+        overflow: hidden;
+    }
+    &__text-control {
+        display: none;
+    }
+    #arrival-control:checked ~ &__text-container  {
+        transform: translateY(0px);
+        transition: 0.7s;
+    }
+    #departure-control:checked ~ &__text-container  {
+        transform: translateY(-30px);
+        transition: 0.7s;
+    }
+    #delay-control:checked ~ &__text-container  {
+        transform: translateY(-60px);
+        transition: 0.7s;
+    }
+    &__text {
+        font-weight: bold;
+        margin: 0;
+        font-size: 25px;
+    }
+    &__search-wrapper {
+        width: 110px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    &__search {
+        width: inherit;
+        height: inherit;
+        font-size: 20px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    &__buttons {
+        width: 70px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px 0 0;
+    }
+    &__wrapper {
+        display: flex;
+        margin: 30px 30px 0 30px;
+        min-width: calc(100% - 60px);
+        height: 400px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-panel {
+        width: 100%;
+        height: 100%;
+        min-width: auto;
+        &_rounded {
+            border-radius: 0px;
+        }
+        &__header {
+            margin: 0;
+            height: 10%;
+        }
+        &__wrapper {
+            margin: 0 10px 0 10px;
+            min-width: calc(100% - 20px);
+            height: 90%;
+        }
+        &__buttons {
+            display: none;
+        }
+    }
+}

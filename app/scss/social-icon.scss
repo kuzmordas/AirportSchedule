@@ -1,0 +1,23 @@
+.social-icon {
+    $color: rgb(240,240,240);
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    &_telegram {
+        background:$color url("../img/telegramm-icon.png") no-repeat center;
+        background-size: 25px;
+    }
+    &_facebook {
+        background:$color url("../img/facebook-icon.png") no-repeat center;
+        background-size: 25px;
+    }
+    &_twitter {
+        background:$color url("../img/twitter-icon.png") no-repeat center;
+        background-size: 25px;
+    }
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    background-color: white;
+}

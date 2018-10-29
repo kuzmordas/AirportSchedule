@@ -1,0 +1,12 @@
+.page {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url("../img/sky2.jpg") no-repeat center/cover;
+}
+
+@media screen and (max-width: 600px) {
+    .page {
+        background: gray;
+    }
+}

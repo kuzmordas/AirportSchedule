@@ -1,0 +1,26 @@
+.switch-button {
+    $color: rgb(204,255,255);
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    &_no-border {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    &_arrival {
+        background: $color url("../img/plane-arrival.png") no-repeat;
+        background-size: 30px;
+    }
+    &_departure {
+        background: $color url("../img/plane-departure.png") no-repeat;
+        background-size: 30px;
+    }
+    &_delay {
+        background: $color url("../img/plane-delay.png") no-repeat center;
+        background-size: 20px;
+    }
+    &_arrival:hover, &_departure:hover, &_delay:hover {
+        border: 1px solid gray;
+    }
+}

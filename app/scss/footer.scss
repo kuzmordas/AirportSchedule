@@ -1,0 +1,38 @@
+.footer {
+    width: 100%;
+    height: 5%;
+    &__wrapper {
+        margin-left: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+    }
+    &__item {
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+    &__item-text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        font-size: 14px;
+        color: white;
+        text-decoration: none;
+    }
+    &__item-text:hover {
+        text-decoration: underline;
+    }
+    &__item-social {
+        width: 110px;
+        margin-left: auto;
+        margin-right: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
+}
